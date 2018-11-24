@@ -214,7 +214,7 @@ AS
        
     debug(pi_message => lv_procedure||' : Start Calling UTL_MAIL pkg');
 			BEGIN
-                lv_status := 'calling xxuei_fnd_common_pkg.send_mail-To:'||lv_to_recipients||'. Cc:'||lv_cc_recipients||'.Sub:'||lv_subject;
+                lv_status := 'calling send_mail-To:'||lv_to_recipients||'. Cc:'||lv_cc_recipients||'.Sub:'||lv_subject;
 				-- TODO: This won't compile unless you define your own send_mail procedure.
                 send_mail(
                     p_in_to          => lv_to_recipients,
